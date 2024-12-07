@@ -52,9 +52,9 @@ const Page = () => {
           <div className="hidden md:flex h-48 border-l border-blue-500 mx-4"></div>
           <div className="py-5 w-full md:w-1/2">
             <div className="text-2xl text-center mb-3">Already a member?</div>
-            <div className="text-center mt-1 text-[blue] font-bold underline">
+            {/* <div className="text-center mt-1 text-[blue] font-bold underline">
               <Link href={"/admin-auth"}>Admin Login?</Link>
-            </div>
+            </div> */}
             <SignIn onSubmit={onSubmit} />
           </div>
         </div>
