@@ -803,7 +803,6 @@ const SignUp = () => {
                     {errors.sRefEmailAddress && <p className="text-red-500">{errors.sRefEmailAddress.message}</p>}
                   </div>
                 </div>
-
                 <label className="block font-serif font-bold text-sm ml-2 mb-2">
                   TRADE REFERENCE 3 <span className="text-red-500">*</span>
                 </label>
