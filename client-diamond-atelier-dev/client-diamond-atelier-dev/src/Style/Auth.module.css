@@ -1,0 +1,21 @@
+/* ------------------index.js-----------------------------*/
+
+.main{
+    height: 100vh !important;
+ }
+ 
+ .loginBackground{
+      margin-top: 50px;
+      width: 100%;
+    background-image: url(../components/images/bkground.jpg);  
+ }
+ 
+ 
+ .signUpBackground{
+   background-image: url(../components/images/bkground.jpg);  
+   width: 100% ;
+}
+
+ 
+ /* ---------------------------- SignUp ------------------------- */
+ 

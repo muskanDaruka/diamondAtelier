@@ -1,0 +1,32 @@
+
+
+.hover:hover{
+    background-color: #0d6efd !important;
+    cursor:  pointer;
+}
+
+.hover:hover .borderHover{
+    border-color: #0d6efd !important;
+}
+
+.heightFix{
+   margin-top: 50px !important;
+   
+}
+
+
+.textSize{
+  font-size: x-small;
+}
+
+.BtnBorder{
+    border-radius: 20px !important;
+}
+
+
+@media (max-width: 767px) {
+    .heightFix{
+        height: auto  !important ;
+        padding: 30px;
+    } 
+  }
