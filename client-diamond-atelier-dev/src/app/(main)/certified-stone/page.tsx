@@ -96,7 +96,6 @@ function PageComponent() {
           params.set(key, value);
         }
   });
-
     replace(`${pathname}?${params.toString()}`, { scroll: false });
   }, [watchField, pathname, replace]);
 
