@@ -73,7 +73,7 @@ if (typeof window !== "undefined") {
 
 
 const removeCertifiedItem = ['SIZE_N','MEDIUM_RATE','RETAIL_RATE','MEDIUM_VALUE','RETAIL_VALUE','Size_CENT','HEIGHT','DESCRIPTION','MM_N','memo_dtl','CENT','CARAT','P_Ct','piece_per_carat','OIC','Approx_Amount','approx_weight',"ICOLOR",'STOCK','Width1','LENGTH','WIDTH','TOT_WGT','No_of_stock_per_carat','no_of_piece','wholesale_price','medium_price','retail_price'];
-const removeCs_ColorItem = ['RATE','SIZE_N','Size_CENT','HEIGHT','DESCRIPTION','MM_N','memo_dtl','CENT','CARAT','P_Ct','piece_per_carat','OIC','Approx_Amount','approx_weight','STOCK','LENGTH','Width1','WIDTH','TOT_WGT','No_of_stock_per_carat','no_of_piece','wholesale_price','medium_price','retail_price',"PRICE_RATE"];
+const removeCs_ColorItem = ['RATE','SIZE_N','Size_CENT','HEIGHT','DESCRIPTION','MM_N','memo_dtl','DISC_PER','CENT','CARAT','P_Ct','piece_per_carat','OIC','Approx_Amount','approx_weight','STOCK','LENGTH','Width1','WIDTH','TOT_WGT','No_of_stock_per_carat','no_of_piece','wholesale_price','medium_price','retail_price',"PRICE_RATE"];
 
 function columnVisibility(columns: any[]) {
     switch (window.location.pathname) {
