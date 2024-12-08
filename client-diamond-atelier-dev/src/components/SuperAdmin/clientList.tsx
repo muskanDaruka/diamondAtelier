@@ -8,7 +8,7 @@ import { clientListApi } from "@/redux/seller/ClientListReducer";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import moment from "moment";
-import CustomPagination from "@/components/common/CustomPagination"; 
+import CustomPagination from "@/components/common/CustomPagination";
 
 interface SalesManData {
     id: number;
@@ -156,34 +156,6 @@ function ClientList() {
                 },
             ]
             : []),
-        ...(userRole === "SELLER" || userRole === "SELLERADMIN" || userRole === "SUPERADMIN"
-            ? [
-                {
-                    header: "Delete",
-                    cell: () => (
-                        <div className="text-center">
-                            <button onClick={() => { }} className="ring-2 rounded-xl m-2 px-2 font-serif">
-                                Remove
-                            </button>
-                        </div>
-                    ),
-                },
-            ]
-            : []),
-        ...(userRole === "SELLER" || userRole === "SELLERADMIN" || userRole === "SUPERADMIN"
-            ? [
-                {
-                    header: "Edit",
-                    cell: () => (
-                        <div className="text-center">
-                            <button onClick={() => { }} className="ring-2 rounded-xl m-2 px-2 font-serif">
-                                Edit
-                            </button>
-                        </div>
-                    ),
-                },
-            ]
-            : []),
     ];
 
     return (
@@ -203,7 +175,7 @@ function ClientList() {
                 <div className="flex justify-end items-center mt-1">
                     <CustomPagination
                         page={page}
-                        count={Math.ceil((data?.TBL_RECD)||50)}
+                        count={Math.ceil((data?.TBL_RECD) || 50)}
                         onChange={handlePageChange}
                     />
                 </div>
