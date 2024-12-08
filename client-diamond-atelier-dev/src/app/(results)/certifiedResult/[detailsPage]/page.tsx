@@ -89,7 +89,7 @@ function Page() {
                       Discount
                     </th>
                     <td className="text-center border border-black">
-                    {`${data[0]?.original?.COST_DISC_PER}%` || "0%"}
+                    {data[0]?.original?.COST_DISC_PER || "0%"}
                     </td>
                   </tr>
                 </tbody>
