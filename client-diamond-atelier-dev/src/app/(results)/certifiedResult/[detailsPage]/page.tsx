@@ -73,7 +73,7 @@ function Page() {
                       P/ct
                     </th>
                     <td className="text-center border border-black">
-                      {data[0]?.original?.NET_RATE}
+                      {`$${data[0]?.original?.NET_RATE}`}
                     </td>
                   </tr>
                   <tr className="border border-black">
@@ -81,7 +81,7 @@ function Page() {
                       Total Price
                     </th>
                     <td className="text-center border border-black">
-                      {data[0]?.original?.NET_VALUE}
+                    {`$${data[0]?.original?.NET_VALUE}`}
                     </td>
                   </tr>
                   <tr className="border border-black">
@@ -89,7 +89,7 @@ function Page() {
                       Discount
                     </th>
                     <td className="text-center border border-black">
-                      {data[0]?.original?.COST_DISC_PER || "0%"}
+                    {`${data[0]?.original?.COST_DISC_PER}%` || "0%"}
                     </td>
                   </tr>
                 </tbody>
@@ -186,7 +186,7 @@ function Page() {
                         Disc %
                       </th>
                       <td className="p-0 text-center border border-black">
-                        {data[0]?.original?.DISC_PER}
+                      {`${data[0]?.original?.DISC_PER}%`}
                       </td>
                     </tr>
                     <tr className="border border-black">
@@ -197,7 +197,7 @@ function Page() {
                         Rap.($)
                       </th>
                       <td className="p-0 text-center border border-black">
-                        {data[0]?.original?.RATE}
+                      {`$${data[0]?.original?.RATE}`}
                       </td>
                     </tr>
                     <tr className="border border-black">
@@ -208,7 +208,7 @@ function Page() {
                         Depth
                       </th>
                       <td className="p-0 text-center border border-black">
-                        {data[0]?.original?.DEPTH}
+                        {`${data[0]?.original?.DEPTH_PER}%`}
                       </td>
                     </tr>
                     <tr className="border border-black">
@@ -219,7 +219,7 @@ function Page() {
                         Table
                       </th>
                       <td className="p-0 text-center border border-black">
-                        {data[0]?.original?.TABLE_PER}
+                        {`${data[0]?.original?.TABLE_PER}%`}
                       </td>
                     </tr>
                     <tr className="border border-black">
