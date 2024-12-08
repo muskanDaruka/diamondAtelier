@@ -69,38 +69,12 @@ function ClientList() {
                 },
             ]
             : []),
-        ...(userRole === "SELLER" || userRole === "SELLERADMIN" || userRole === "SUPERADMIN"
-            ? [
-                {
-                    accessorKey: "NET_VALUE",
-                    header: "Pricing",
-                    cell: (info: any) => (
-                        <span className="font-serif text-nowrap">
-                            {`${info.getValue() ? `$${parseFloat(info.getValue()).toFixed(2)}` : "-"}`}
-                        </span>
-                    ),
-                },
-            ]
-            : []),
         ...(userRole === "SUPERADMIN"
             ? [
                 {
                     accessorKey: "SELLER_NAME",
                     header: "Seller Name",
                     cell: (info: any) => <span className="font-serif text-nowrap">{`${info.getValue() ? `${info.getValue()}` : "-"}`}</span>,
-                },
-            ]
-            : []),
-        ...(userRole === "SUPERADMIN"
-            ? [
-                {
-                    accessorKey: "DUE_AMOUNT",
-                    header: "Total Due",
-                    cell: (info: any) => (
-                        <span className="font-serif text-nowrap">
-                            {`${info.getValue() ? `$${parseFloat(info.getValue()).toFixed(2)}` : "-"}`}
-                        </span>
-                    ),
                 },
             ]
             : []),
@@ -117,11 +91,38 @@ function ClientList() {
                 },
             ]
             : []),
+        ...(userRole === "SELLER" || userRole === "SELLERADMIN"
+            ? [
+                {
+                    accessorKey: "NET_VALUE",
+                    header: "Pricing",
+                    cell: (info: any) => (
+                        <span className="font-serif text-nowrap">
+                            {`${info.getValue() ? `$${parseFloat(info.getValue()).toFixed(2)}` : "-"}`}
+                        </span>
+                    ),
+                },
+            ]
+            : []),
         ...(userRole === "SUPERADMIN"
             ? [
                 {
                     accessorKey: "MEMO_AMOUNT",
                     header: "Memo Amount",
+                    cell: (info: any) => (
+                        <span className="font-serif text-nowrap">
+                            {`${info.getValue() ? `$${parseFloat(info.getValue()).toFixed(2)}` : "-"}`}
+                        </span>
+                    ),
+                },
+            ]
+            : []),
+
+        ...(userRole === "SUPERADMIN"
+            ? [
+                {
+                    accessorKey: "DUE_AMOUNT",
+                    header: "Total Due",
                     cell: (info: any) => (
                         <span className="font-serif text-nowrap">
                             {`${info.getValue() ? `$${parseFloat(info.getValue()).toFixed(2)}` : "-"}`}

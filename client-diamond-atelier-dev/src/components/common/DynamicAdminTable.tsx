@@ -83,7 +83,7 @@ function DynamicAdminTable<T>({
                   {row.getVisibleCells().map((cell) => (
                     <td
                       key={cell.id}
-                      className="border py-1 text-sm text-center"
+                      className="border py-2 text-sm text-center"
                     >
                       {flexRender(
                         cell.column.columnDef.cell,
